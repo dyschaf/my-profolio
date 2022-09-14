@@ -10,25 +10,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="bg-secondary navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+    <nav class="sticky-top bg-info navbar navbar-expand-lg">
+        <div class="  container-fluid:">
           <a class="navbar-brand" href="#">Portfolio</a>
-          
         </div>
       </nav>
       <div style="background-attachment: fixed; height: 600px; background-image: url('workplace-2303851_960_720.jpg')";>
-        
         <div class=" justify-content-center text-center badge bg-secondary   text-wrap" style="width: 40vw; margin-left: 30vw; padding: 5vw; margin-top: 10vw;"><h1 class="text-center">Dovid Schaffel's<br>Portfolio</h1>
         <h3 class="text-center">Please review my projects below. </h3>
         </div>
-
+      </div>
+      <div class="bg-warning">
+      <h3 class=" justify-content-center text-center">TECHNICAL SKILLS:<br>
+        Javascript, SQL, Node, React, Redux, Express, Git, Linux, Bootstrap, HTML, CSS.</h3>
       </div>
     <h1 class=" justify-content-center text-center">Here are some of my projects :</h1>
-    <h3 class=" justify-content-center text-center">TECHNICAL SKILLS:<br>
-      Javascript, SQL, Node, React, Redux, Express, Git, Linux, Bootstrap, HTML, CSS.</h3>
     <div class="justify-content-center text-center container">
         <section class="text-start">
-          <div class=" border border-light border-3">
+          <div class=" border border-light border-3 bg-info">
           <div class=" project_item" id="compare_phone_specs">
           <h3>Compare Phone Specs</h3>
           <small><a href="https://github.com/shaul613/crypto_world_hackathon/tree/dovid" target="_blank">GitHub</a></small>
@@ -39,6 +38,7 @@
           <p>So, as a kid I loved to keep track of the latest hardware and software on phones. This inspired me to find an api that holds all the specs and display it on the page. First, you need sign up and then login using <b><i>Express</i></b> server with <b><i>Node.JS</i></b> for the application's backend and <b><i>Postgres</i></b> for as DBMS.  Then with the <b><i>React</i></b> the user has two inputs that holds texts and I take the value of the input and attach it to the api.  After you click search, the reseult of the fetch gets added to a state using <b><i>Hooks</i></b> to display the name of the phones relevent to the search.  With a picture displayed you click the right phone that you want and it displays a table with all the specs.
 </p></div>
           </div>
+          <div class=" border border-light border-3 bg-info">
           <div class="col project_item" id="crypto_world_hackathon">
             <h3>Cryptocurrency Trading Platform</h3>
             <small><a href="https://github.com/shaul613/crypto_world_hackathon/tree/dovid" target="_blank">GitHub</a></small>
@@ -51,7 +51,9 @@
               If the user chooses to create a new account, all the information entered gets saved in the user table in our database. By default we give each user 0.2 Bitcoin upon signup.
               If the user decides to log in with existing credentials, the entered information gets saved in the login table in our database as well as a unique login id and whether the login was successful.
               Once the user is logged in, they have the option to exchange between the differnt currencies we offer! So far we only offer Bitcoin, Etherium, and USDC, but hey... we're still new to this game, so please understand.
-            </p>
+            </p></div>
+            </div>
+            <div class=" border border-light border-3 bg-info">
             <div class="col project_item" id="card-game-war">
               <h3>Card Game War</h3>
               <small><a href="https://github.com/dyschaf/Hackathon" target="_blank">GitHub</a></small>
@@ -60,39 +62,45 @@
                 This was one of my first real projects writen in <b><i>JavaScript</i></b>.  I used an array of objects to holds my cards. These object's also stored the value of each card and img background path.  The first thing that runs is the shuffle that each object will be in random order, then splits the deck for player one and player two. On the page you can either click player one's button or player two's button and it causes the screen to show the first card of each player.  Whoever wins gets both players object index 0 witch would be push in the back of the deck "array". When there is a tie, I built into the DOM a container holding "war container" it will displayed five cards and the only the bottom and the top card showing for each player.  Then I set a set interval to wait three seconds to see which card the winner won and then pushes the cards to the winning player.
               </p>
             </div>
+            </div>
+            <div class=" border border-light border-3 bg-info">
             <div class="project_item" id="todo">
               <h3>ToDo List</h3>
               <small><a href="https://github.com/dyschaf/developers.institute/tree/main/week-6/day-5/ExerciseXP" target="_blank">GitHub</a></small>
               <p>
-                This project is a classic ToDo list I used <b><i>JavaScript</i></b>.  I extracted a name, description, date, when it starts and when it ends with 4 inputs. This gets added to an array in <b><i>LocalStorage</i></b>.  I sorted each ToDo by starting date and then appended to a second HTML page.  If this ToDo is checked redefined as true "completed" and text turns green. If the end date passed the text would display red. I add a remover button to remove tasks from my <b><i>LocalStorage</i></b> and HTML page.
+                This project is a classic ToDo list I used <b><i>JavaScript</i></b>.  I extracted a name, description, date, when it starts and when it ends with 4 inputs. This gets added to an array in <b><i>localStorage</i></b>.  I sorted each ToDo by starting date and then appended to a second HTML page.  If this ToDo is checked redefined as true "completed" and text turns green. If the end date passed the text would display red. I add a remover button to remove tasks from my <b><i>localStorage</i></b> and HTML page.
 
               </p>
             </div>
+            </div>
             </section>
             <section>
+      <div class="bg-warning">
+              <div class=" border border-light border-3 " >
               <div class="text-start" id="todo">
                 <h3>EXPERIENCE</h3>
                 <p>
                   Tier 2 Tech Support, Techloq, Jerusalem, Israel 2021-current <br>
-Customer Support (Team Lead)
-<ul><li>Conduct triage to determine the customer’s needs (application maintenance, user training)</li>
-<li>Use Teamviewer for maintenance including application uninstall/reinstall, clean up temp folders</li>
-</ul>
-Rerouting IPs, train clients dealing with sll, add certificate to programs through cmd, run sc queries
-Employee Training <br>
-<ul><li>How to conduct triage
-</li>
-  <li>Best practices in working with customers</li></ul>
+                  Customer Support (Team Lead)
+                  <ul><li>Conduct triage to determine the customer’s needs (application maintenance, user training)</li>
+                  <li>Use Teamviewer for maintenance including application uninstall/reinstall, clean up temp folders</li>
+                  </ul>
+                  Rerouting IPs, train clients dealing with sll, add certificate to programs through cmd, run sc queries
+                  Employee Training <br>
+                  <ul><li>How to conduct triage
+                  </li>
+                    <li>Best practices in working with customers</li></ul>
 
-Tools include: Tcp, Dev tools, Gray logs, Slack, Teamviewer, Salesforce.
+                  Tools include: Tcp, Dev tools, Gray logs, Slack, Teamviewer, Salesforce.
   
                 </p>
+              </div>
               </div>
             </section>
             <aside  id='about_me'>
               
               <h3>Feel free to contact me</h3>
-              <p><a href="./dovid schaffel resume.pdf" download>Click here to Download my CV</a></p>
+              <p>Click here to <a href="./dovid schaffel resume.pdf" download>Download</a> my CV</p>
               <p>
                 <span>Phone:</span>
                 <br>
